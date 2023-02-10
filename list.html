@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>My first list</title>
@@ -11,25 +11,19 @@
         <meta name="viewport" content="widht=device-width; initial-scale=1.0">
     </head>
     <body>
-        <header id="head" class="container">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h1>HALLO, ICH HEIßE <em>CARLOS</em>!</h1>
-                <h2>
-                  This web pretends to show the basic concepts of HTML, CSS and
-                  JavaScript programming language and show up little things about me
-                  :D
-                </h2>
-                <hr />
-              </div>
-            </div>
-          </header>
+      <header id="head" class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>HALLO, ICH HEIßE <em>CARLOS</em>!</h1>
+            <h2>This web pretends to show the basic concepts of HTML, CSS and JavaScript programming language and things about me</h2>
+            <hr />
+          </div>
+        </div>
+      </header>
       
           <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-4">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="img/zerg.png" alt="logo" width="40">
-              </a>
+              <button class="bg-dark" id="logob" onclick="changeback()"><img src="img/semp.png" alt="logo" width="50"></button>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -40,6 +34,7 @@
                   <li class="nav-item"><a class="nav-link" href="subfolder/words.html">Words page</a></li>
                   <li class="nav-item"><a class="nav-link" href="subfolder/form.html">Form page</a></li>
                   <li class="nav-item"><a class="nav-link" href="filter.html">Filter page</a></li>
+                  <li class="nav-item"><a class="nav-link" href="games.html">Games page</a></li>
                 </ul>
                 <!--<form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -140,5 +135,6 @@
         </footer>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="js/changer.js"></script>
     </body>
 </html>

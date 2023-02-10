@@ -1,12 +1,13 @@
 Cascading Style Sheet
-h1 {
-	font-family: "Comic Sans MS", "Comic Sans";
-	font-size: 3em;
-	text-align:center;
+
+*{
+	margin: 0px;
+	padding: 0px;
 }
+
 h2 {
 	font-family: "Comic Sans MS", "Comic Sans";
-	font-size: 1.6em;
+	font-size: 1.6em !important;
 }
 h3 {
 	font-family: "Comic Sans MS", "Comic Sans";
@@ -73,12 +74,75 @@ canvas{
 	border: 1px solid black;
 }
 body{
-	background: #24C6DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #c8f3f8 !important; 
 }
 .btn-my{
 	--bs-btn-border-radius: 1rem;
 	--bs-btn-border-color: black;
 	--bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+}
+input:focus:invalid {
+	border: 2px solid red;
+}
+.line{
+	display:inline-block;
+}
+h1 {
+	font-family: "Comic Sans MS", "Comic Sans";
+	font-size: 3em !important;
+	text-align:center;
+	text-shadow:  2px 2px 20px rgb(60, 177, 206),
+    -2px 2px 20px rgb(95, 215, 231),
+    2px -2px 20px rgb(40, 131, 173),
+    -2px -2px 20px rgb(38, 164, 236) !important;
+}
+#my-pic{
+	border: 1px solid black;
+}
+#my-pic:hover{
+	transform: scale(1.5) rotateZ(360deg);
+	border: 1px solid black;
+	transition: 1.5s;
+}
+
+@keyframes moving {
+	
+	0%{transform: translateX(0vw);}
+
+	100%{transform: translateX(50vw);}
+	
+}
+
+#princeanimation{
+	animation: moving 3s linear;
+	animation-direction: alternate; 
+	animation-iteration-count: infinite;
+}
+
+@keyframes chocomove {
+	0%{transform: translateX(0vw);}
+	50%{transform: translateX(50vw);}
+	51%{transform: translateX(50vw) scaleX(-1);}
+	99%{transform: translateX(0vw) scaleX(-1);}
+	100%{transform: translateX(0vw);}
+}
+
+#choco{
+	animation: chocomove 5s linear;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+}
+
+#logob{
+	border: none;
+}
+
+.back1{
+	background: rgb(19, 143, 226) !important;
+}
+.back2{
+	background: rgb(111, 206, 127) !important;
+}
+.back3{
+	background: #c8f3f8 !important;
 }
